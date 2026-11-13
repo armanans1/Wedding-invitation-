@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Amna &amp; Danish Nikah</title>
-<meta name="description" content="You are invited to the Nikah of Amna &amp; Danish.">
+<title>Jawed &amp; Safina Wedding</title>
+<meta name="description" content="You are invited to the Barat and Walima of Md Jawed Ansari &amp; Safina Abbas.">
 <meta name="theme-color" content="#33050c">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&family=Pinyon+Script&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&family=Pinyon+Script&family=Playfair+Display:ital,wght@1,500;1,600&display=swap">
 <style>
 /* Layout concept: one long, centred column of velvet-red bands. A curtain cover opens onto
    a hero with a chandelier, then arch-topped cards, a scratch-to-reveal date and event cards.
@@ -34,6 +34,7 @@
   --f-script: "Pinyon Script", "Snell Roundhand", "Apple Chancery", cursive;
   --f-label: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   --f-arabic: "Amiri", "Noto Naskh Arabic", "Geeza Pro", "Traditional Arabic", serif;
+  --f-name: "Playfair Display", "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --lattice: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cpath d='M48 3 93 48 48 93 3 48Z M48 24 72 48 48 72 24 48Z' fill='none' stroke='%23c9a45c' stroke-opacity='.13'/%3E%3C/svg%3E");
   color-scheme: dark;
 }
@@ -128,14 +129,22 @@ a { color: inherit; }
     radial-gradient(circle at 92% 38%, rgba(255,196,120,.18), transparent 22%);
 }
 .cover .mid { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); z-index: 2; text-align: center; padding: 0 24px; transition: opacity .6s ease; }
-.cover .mono { font: 400 clamp(54px, 17vw, 84px)/1 var(--f-script); color: var(--cream); text-shadow: 0 2px 24px rgba(0,0,0,.6); }
-.cover .ring { width: 72px; height: 72px; margin: 28px auto 20px; border-radius: 50%; border: 1px solid var(--gold); position: relative; }
+.cover .bism-c { display: block; font: 400 clamp(44px, 12.5vw, 62px)/1.7 var(--f-arabic); color: var(--cream); text-shadow: 0 2px 24px rgba(0,0,0,.6); }
+.cover .ring { width: 72px; height: 72px; margin: 42px auto 18px; border-radius: 50%; border: 1px solid var(--gold); position: relative; }
 .cover .ring::before, .cover .ring::after { content: ""; position: absolute; inset: 10px; border-radius: 50%; border: 1px solid var(--gold-hi); }
 .cover .ring::after { inset: -9px; border-color: rgba(201,164,92,.45); animation: pulse 2.4s ease-out infinite; }
 .cover .tap { font: italic 500 clamp(30px, 8vw, 40px)/1.1 var(--f-body); letter-spacing: .02em; color: var(--gold-hi); }
-.cover .sub { margin-top: 10px; font: 500 11px/1.6 var(--f-label); letter-spacing: .34em; text-transform: uppercase; color: var(--gold); }
+.cover .corn { display: flex; align-items: center; justify-content: center; gap: 16px; max-width: 280px; margin: 26px auto 0; }
+.cover .corn i { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-lo)); }
+.cover .corn i:last-child { background: linear-gradient(270deg, transparent, var(--gold-lo)); }
+.cover .subt { display: block; margin-top: 30px; }
+.cover .subt small { display: block; margin-bottom: 18px; font: 500 11px/1.9 var(--f-label); letter-spacing: .34em; text-transform: uppercase; color: var(--gold); }
+.cover .subt em { display: block; font: italic 600 clamp(28px, 7.8vw, 36px)/1.25 var(--f-name); color: var(--cream); text-shadow: 0 2px 24px rgba(0,0,0,.6); }
+.cover .subt em span { display: block; }
+.cover .subt em b { display: block; margin: 2px 0 4px; font: 400 clamp(36px, 10.5vw, 48px)/1.1 var(--f-script); color: var(--gold); }
 body.opened .cover .cp.l { transform: translateX(-110%); }
 body.opened .cover .cp.r { transform: translateX(110%); }
+@media (max-height: 680px) { .cover .ring { width: 60px; height: 60px; margin-top: 28px; } }
 body.opened .cover .mid { opacity: 0; }
 body.opened .cover { background: transparent; transition: background 1.2s ease; pointer-events: none; }
 @keyframes pulse { 0% { transform: scale(.82); opacity: .9; } 100% { transform: scale(1.35); opacity: 0; } }
@@ -164,9 +173,11 @@ body.opened .cover { background: transparent; transition: background 1.2s ease; 
 .florals.r { right: 0; -webkit-mask-image: linear-gradient(270deg, #000 35%, transparent); mask-image: linear-gradient(270deg, #000 35%, transparent); }
 .hero-in { position: relative; z-index: 2; }
 .chandelier { display: block; width: 190px; margin: 0 auto 6px; color: var(--gold); filter: drop-shadow(0 0 12px rgba(255,200,120,.55)); }
-.bism { font: 400 clamp(40px, 11vw, 56px)/1.8 var(--f-arabic); color: var(--cream); margin-top: 34px; }
-.honour { margin-top: 8px; font: 500 clamp(11px, 3vw, 13px)/2 var(--f-label); letter-spacing: .3em; text-transform: uppercase; color: var(--text); text-wrap: balance; }
-.name { font: 400 clamp(68px, 20vw, 108px)/1.05 var(--f-script); color: var(--cream); text-shadow: 0 2px 20px rgba(0,0,0,.55); margin-top: 22px; }
+.honour { margin-top: 30px; font: 500 clamp(11px, 3vw, 13px)/2 var(--f-label); letter-spacing: .3em; text-transform: uppercase; color: var(--text); text-wrap: balance; }
+.name { font: italic 600 clamp(34px, 9.6vw, 52px)/1.25 var(--f-name); color: var(--gold-hi); margin-top: 26px; text-wrap: balance; filter: drop-shadow(0 3px 14px rgba(0,0,0,.55)); }
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .name { background: linear-gradient(180deg, #f6e5b4, var(--gold) 58%, #a8823d); -webkit-background-clip: text; background-clip: text; color: transparent; }
+}
 .amp { font: 400 clamp(50px, 14vw, 72px)/1 var(--f-script); color: var(--gold); margin-top: 18px; }
 .rel { margin-top: 8px; font: 500 clamp(11px, 3vw, 13px)/1.8 var(--f-label); letter-spacing: .34em; text-transform: uppercase; color: var(--gold-hi); }
 .parents { margin-top: 6px; font: italic 500 clamp(22px, 6vw, 28px)/1.3 var(--f-body); color: var(--cream); }
@@ -209,11 +220,11 @@ body.opened .hero-in > * { animation: rise .9s cubic-bezier(.2, .7, .2, 1) backw
 .paper .cres { fill: var(--gold-lo); }
 .paper hr { border: 0; height: 1px; background: var(--gold); margin: 34px 0 6px; }
 .paper .who { margin-top: 28px; }
-.paper .who .sc { font: 400 clamp(40px, 11vw, 54px)/1.1 var(--f-script); color: #9d1226; }
+.paper .who .sc { font: italic 600 clamp(28px, 7.8vw, 36px)/1.25 var(--f-name); color: #a0731c; text-wrap: balance; }
 .paper .who .rel { color: var(--ink); }
 .paper .who .pn { margin-top: 6px; font: 500 clamp(22px, 6vw, 27px)/1.35 var(--f-body); color: var(--ink); }
-.paper .duo { margin-top: 36px; font: 400 clamp(46px, 13vw, 64px)/1.1 var(--f-script); color: #9d1226; }
-.paper .duo b { font-weight: 400; color: var(--gold-lo); }
+.paper .duo { margin-top: 38px; font: italic 600 clamp(34px, 9.6vw, 46px)/1.2 var(--f-name); color: #a0731c; }
+.paper .duo b { font: 400 1.4em/1 var(--f-script); color: #a0731c; vertical-align: -.08em; }
 
 /* ---------- scratch ---------- */
 .frame { position: relative; margin: 54px auto 0; max-width: 440px; padding: 30px 18px 26px; background: var(--wine-950); border: 2px solid var(--gold); outline: 1px solid var(--gold-lo); outline-offset: 6px; }
@@ -229,10 +240,6 @@ body.opened .hero-in > * { animation: rise .9s cubic-bezier(.2, .7, .2, 1) backw
 .reveal-card .big { font: 500 clamp(30px, 8.6vw, 40px)/1.15 var(--f-body); color: var(--ink); }
 .reveal-card .sm { font: 600 12px/1.6 var(--f-label); letter-spacing: .26em; text-transform: uppercase; color: var(--ink); }
 .reveal-card .sm i { display: inline-block; width: 5px; height: 5px; margin: 0 10px 2px; transform: rotate(45deg); background: #9d1226; }
-#foil { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: grab; transition: opacity .9s ease; }
-#foil.gone { opacity: 0; pointer-events: none; }
-.hint { margin-top: 34px; font: italic 400 22px/1.4 var(--f-body); color: var(--text-soft); }
-.linkbtn { margin-top: 10px; background: none; border: 0; padding: 8px 10px; font: 500 11px/1 var(--f-label); letter-spacing: .3em; text-transform: uppercase; color: var(--gold); cursor: pointer; border-bottom: 1px solid var(--gold-lo); }
 
 /* ---------- countdown ---------- */
 .count { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 38px; }
@@ -270,9 +277,6 @@ body.opened .hero-in > * { animation: rise .9s cubic-bezier(.2, .7, .2, 1) backw
 .host { margin-top: 30px; padding: 66px 22px 40px; border: 1px solid var(--gold-lo); border-radius: 50% 50% 4px 4px / 150px 150px 4px 4px; background: rgba(62,12,20,.82); }
 .host .eyebrow { letter-spacing: .34em; }
 .host .hn { margin-top: 18px; font: 500 clamp(30px, 8.2vw, 38px)/1.3 var(--f-body); color: var(--cream); text-wrap: balance; }
-.phone { display: block; margin: 26px auto 0; max-width: 330px; padding: 22px 10px; border: 1px solid var(--gold); font: 500 clamp(14px, 4vw, 17px)/1 var(--f-label); letter-spacing: .26em; color: var(--gold); text-decoration: none; font-variant-numeric: tabular-nums; }
-.phone:hover { background: rgba(201,164,92,.12); }
-.copy { margin-top: 12px; }
 
 /* ---------- closing ---------- */
 .close { overflow: hidden; background: linear-gradient(180deg, rgba(40,4,10,.35), rgba(30,3,8,.82)), radial-gradient(ellipse at 50% 100%, #7a1424, #2a0409 70%); }
@@ -287,11 +291,12 @@ body.opened .hero-in > * { animation: rise .9s cubic-bezier(.2, .7, .2, 1) backw
   filter: blur(5px); }
 .close .wrap { position: relative; z-index: 1; }
 .close .big { font: 500 clamp(34px, 9.5vw, 48px)/1.2 var(--f-body); color: var(--cream); text-wrap: balance; margin-top: 26px; }
-.close .duo { margin-top: 18px; font: 400 clamp(58px, 17vw, 96px)/1.1 var(--f-script); color: var(--gold); text-shadow: 0 2px 20px rgba(0,0,0,.6); }
-.close .tag { margin-top: 18px; font: 500 clamp(15px, 4.4vw, 19px)/1.4 var(--f-label); letter-spacing: .1em; color: var(--text); }
+.close .duo { margin-top: 22px; font: italic 600 clamp(42px, 12vw, 64px)/1.2 var(--f-name); color: var(--gold); text-shadow: 0 2px 20px rgba(0,0,0,.6); }
+.close .tag { margin-top: 18px; font: 500 clamp(15px, 4.4vw, 19px)/1.4 var(--f-label); letter-spacing: .1em; color: var(--gold-hi); }
 .close .when { margin-top: 22px; font: 500 12px/1.8 var(--f-label); letter-spacing: .3em; text-transform: uppercase; color: var(--text-soft); }
 .close .pill { margin-top: 36px; }
-.foot { margin-top: 56px; font: 400 14px/1.6 var(--f-label); letter-spacing: .08em; color: var(--text-soft); opacity: .75; }
+.foot { margin-top: 56px; font: 400 14px/1.6 var(--f-label); letter-spacing: .08em; color: var(--text-soft); opacity: .85; }
+.foot span { color: var(--gold-hi); }
 
 /* ---------- fixed controls ---------- */
 .progress { position: fixed; top: env(safe-area-inset-top, 0px); left: 0; right: 0; height: 3px; z-index: 60; transform-origin: 0 50%; transform: scaleX(0); background: var(--gold); pointer-events: none; }
@@ -324,10 +329,11 @@ img{max-width:100%}
 <button class="cover" id="cover" type="button" aria-label="Tap to open the invitation">
   <span class="cp l"></span><span class="cp r"></span><span class="glow"></span>
   <span class="mid">
-    <span class="mono" data-mono></span>
+    <span class="bism-c" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</span>
+    <span class="corn" aria-hidden="true"><i></i><svg class="cres"><use href="#cres"/></svg><i></i></span>
+    <span class="subt"><small>The <span data-bind="occasion"></span> of</small><em><span data-bind="groom"></span><b>&amp;</b><span data-bind="bride"></span></em></span>
     <span class="ring" aria-hidden="true"></span>
     <span class="tap">tap to open</span>
-    <span class="sub" data-bind="occasionLine"></span>
   </span>
 </button>
 
@@ -356,16 +362,14 @@ img{max-width:100%}
         <ellipse cx="150" cy="66" rx="3" ry="5.5"/><ellipse cx="190" cy="51" rx="3" ry="5.5"/>
       </g>
     </svg>
-    <p class="bism" style="--i:1" lang="ar" dir="rtl">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
-    <div class="orn" style="--i:2"><i></i><svg class="cres"><use href="#cres"/></svg><i></i></div>
     <p class="honour" style="--i:3">We request the honour of your presence at the <span data-bind="occasion"></span> of</p>
-    <h1 class="name" style="--i:4" data-bind="bride"></h1>
-    <p class="rel" style="--i:5">Daughter of</p>
-    <p class="parents" style="--i:5" data-bind="brideParents"></p>
+    <h1 class="name" style="--i:4" data-bind="groom"></h1>
+    <p class="rel" style="--i:5">Son of</p>
+    <p class="parents" style="--i:5" data-bind="groomParents"></p>
     <p class="amp" style="--i:6" aria-hidden="true">&amp;</p>
-    <p class="name" style="--i:7; margin-top: 8px" data-bind="groom"></p>
-    <p class="rel" style="--i:8">Son of</p>
-    <p class="parents" style="--i:8" data-bind="groomParents"></p>
+    <p class="name" style="--i:7; margin-top: 8px" data-bind="bride"></p>
+    <p class="rel" style="--i:8">Daughter of</p>
+    <p class="parents" style="--i:8" data-bind="brideParents"></p>
     <p class="tagline" style="--i:9">As they begin their forever in faith and love.</p>
     <p class="scroll-cue" style="--i:10">Scroll</p>
   </div>
@@ -391,16 +395,16 @@ img{max-width:100%}
       <p class="lede">With hearts full of gratitude, we warmly invite you to join us as we celebrate this beautiful beginning with the love, prayers, and blessings of our families.</p>
       <hr>
       <div class="who">
-        <p class="sc" data-bind="bride"></p>
-        <p class="rel">Daughter of</p>
-        <p class="pn" data-bind="brideParents"></p>
-      </div>
-      <div class="who">
         <p class="sc" data-bind="groom"></p>
         <p class="rel">Son of</p>
         <p class="pn" data-bind="groomParents"></p>
       </div>
-      <p class="duo"><span data-bind="bride"></span> <b>&amp;</b> <span data-bind="groom"></span></p>
+      <div class="who">
+        <p class="sc" data-bind="bride"></p>
+        <p class="rel">Daughter of</p>
+        <p class="pn" data-bind="brideParents"></p>
+      </div>
+      <p class="duo"><span data-bind="groomShort"></span> <b>&amp;</b> <span data-bind="brideShort"></span></p>
     </div>
   </div>
 </section>
@@ -408,7 +412,7 @@ img{max-width:100%}
 <section class="sec alt" aria-label="Wedding date">
   <div class="wrap">
     <p class="eyebrow">A date to hold close</p>
-    <h2 class="h2">Scratch to reveal</h2>
+    <h2 class="h2">Save the date</h2>
     <div class="orn"><i></i><svg class="cres"><use href="#cres"/></svg><i></i></div>
     <div class="frame">
       <div class="stage" id="stage">
@@ -417,11 +421,8 @@ img{max-width:100%}
           <p class="big" data-bind="dateLong"></p>
           <p class="sm"><span data-bind="weekday"></span><i></i><span data-bind="time"></span></p>
         </div>
-        <canvas id="foil" aria-label="Scratch surface"></canvas>
       </div>
     </div>
-    <p class="hint" id="hint">Use your finger or cursor to uncover the moment.</p>
-    <button class="linkbtn" id="revealBtn" type="button">Or tap to reveal</button>
     <div class="count" id="count" aria-live="off">
       <div class="cell"><b id="cd-d">0</b><span>Days</span></div>
       <div class="cell"><b id="cd-h">00</b><span>Hours</span></div>
@@ -466,8 +467,8 @@ img{max-width:100%}
 
 <section class="sec alt" aria-label="Hosts and contact">
   <div class="wrap">
-    <p class="eyebrow">Get in touch</p>
-    <h2 class="h2">Hosts &amp; contact</h2>
+    <p class="eyebrow">With love from</p>
+    <h2 class="h2">Our families</h2>
     <div class="orn"><i></i><svg class="cres"><use href="#cres"/></svg><i></i></div>
     <div id="hosts"></div>
   </div>
@@ -477,37 +478,37 @@ img{max-width:100%}
   <div class="wrap">
     <svg class="cres" style="width:34px;height:34px"><use href="#cres"/></svg>
     <p class="big">We can't wait to celebrate with you.</p>
-    <p class="duo"><span data-bind="bride"></span> &amp; <span data-bind="groom"></span></p>
+    <p class="duo"><span data-bind="groomShort"></span> &amp; <span data-bind="brideShort"></span></p>
     <p class="tag" data-bind="hashtag"></p>
     <p class="when"><span data-bind="dateLong"></span> · <span data-bind="venue"></span></p>
-    <a class="pill" id="rsvp" href="#" target="_blank" rel="noopener" hidden>Let us know you're coming</a>
-    <p class="foot">Made with love for <span data-bind="bride"></span> &amp; <span data-bind="groom"></span></p>
+    <p class="foot">Made with love for <span data-bind="groomShort"></span> &amp; <span data-bind="brideShort"></span></p>
   </div>
 </footer>
 
 <script>
-/* ============ EDIT THIS BLOCK: all names, dates and numbers live here ============ */
+/* ============ EDIT THIS BLOCK: all names, dates and places live here ============ */
 const CONFIG = {
-  bride: "Amna",
-  groom: "Danish",
-  brideParents: "Latif Rahman & Zubeida Rahman",
-  groomParents: "Hasan Kazmi & Nilofar Kazmi",
-  occasion: "Nikah",                         // shown in "...presence at the ___ of"
-  main: { dateLong: "March 12, 2027", weekday: "Friday", time: "7:30 PM", venue: "The Grand Pavilion",
-          iso: "2027-03-12T19:30:00+05:30" }, // countdown target
-  hashtag: "#DanishWedsAmna",
+  groom: "Md Jawed Ansari",
+  bride: "Safina Abbas",
+  groomShort: "Jawed",                       // short names used in big script lettering
+  brideShort: "Safina",
+  groomParents: "Mustaquem Ansari & Nasima Begum",
+  brideParents: "Mohammad Abbas & Hena Kausar",
+  occasion: "Barat and Walima",              // shown as "...presence at the ___ of"
+  main: { dateLong: "December 5, 2026", weekday: "Saturday", time: "8:30 PM", venue: "Kishanganj, Bihar",
+          iso: "2026-12-05T20:30:00+05:30" }, // countdown target
+  hashtag: "#JawedWedsSafina",
   events: [
-    { name: "Mehendi", arabic: "مہندی", date: "March 9, 2027",  time: "5:00 PM", place: "Bride's Residence",  icon: "leaf" },
-    { name: "Nikah",   arabic: "نکاح",   date: "March 12, 2027", time: "7:30 PM", place: "The Grand Pavilion", icon: "crescent" },
-    { name: "Walima",  arabic: "ولیمہ",  date: "March 13, 2027", time: "1:00 PM", place: "The Grand Pavilion", icon: "heart" }
+    { name: "Barat",  arabic: "بارات", date: "Saturday, December 5, 2026", time: "8:30 PM", place: "Kishanganj, Bihar", icon: "crescent" },
+    { name: "Walima", arabic: "ولیمہ", date: "Sunday, December 6, 2026",   time: "1:30 PM", place: "Chhattergachh",     icon: "heart" }
     // optional per event: mapQuery: "full address", or map: "https://maps.google.com/..."
   ],
   contacts: [
-    { label: "Bride's Family", name: "Latif Rahman & Zubeida Rahman", phone: "+91 90123 45678" },
-    { label: "Groom's Family", name: "Hasan Kazmi & Nilofar Kazmi",   phone: "+91 90123 45679" }
+    { label: "Groom's Family", name: "Mustaquem Ansari & Nasima Begum" },
+    { label: "Bride's Family", name: "Mohammad Abbas & Hena Kausar" }
   ],
-  rsvpWhatsApp: "919012345679",   // digits only with country code; leave "" to hide the RSVP button
-  musicSrc: ""                    // path of an mp3 published next to this page; "" uses a soft built-in tone
+  musicSrc: "wedding.mp3",   // upload an mp3 with this exact name next to index.html
+  musicStart: 0              // seconds to skip at the start (0 = play the file from its beginning)
 };
 /* ================================================================================== */
 
@@ -522,7 +523,6 @@ const ICONS = {
 /* ----- fill text from CONFIG ----- */
 const flat = { ...CONFIG, ...CONFIG.main, occasionLine: "The " + CONFIG.occasion + " of " + CONFIG.bride + " & " + CONFIG.groom };
 $$("[data-bind]").forEach(el => { const v = flat[el.dataset.bind]; if (v != null) el.textContent = v; });
-$("[data-mono]").textContent = CONFIG.bride[0] + " & " + CONFIG.groom[0];
 
 /* ----- events ----- */
 $("#events").innerHTML = CONFIG.events.map(ev => {
@@ -534,27 +534,8 @@ $("#events").innerHTML = CONFIG.events.map(ev => {
 }).join("");
 
 /* ----- hosts ----- */
-$("#hosts").innerHTML = CONFIG.contacts.map((c, i) => {
-  const tel = c.phone.replace(/[^\d+]/g, "");
-  return '<div class="host"><p class="eyebrow">' + c.label + '</p><p class="hn">' + c.name + '</p>' +
-    '<a class="phone" id="ph' + i + '" href="tel:' + tel + '">' + c.phone + '</a>' +
-    '<button class="linkbtn copy" type="button" data-copy="' + c.phone + '" data-target="ph' + i + '">Copy number</button></div>';
-}).join("");
-$$(".copy").forEach(b => b.addEventListener("click", async () => {
-  const done = () => { b.textContent = "Copied"; setTimeout(() => (b.textContent = "Copy number"), 1800); };
-  try { await navigator.clipboard.writeText(b.dataset.copy); done(); }
-  catch (e) {
-    const r = document.createRange(); r.selectNodeContents(document.getElementById(b.dataset.target));
-    const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Selected, press copy";
-  }
-}));
-
-/* ----- RSVP link ----- */
-if (CONFIG.rsvpWhatsApp) {
-  const a = $("#rsvp");
-  a.href = "https://wa.me/" + CONFIG.rsvpWhatsApp + "?text=" + encodeURIComponent("Assalamu alaikum, we will be joining the celebration of " + CONFIG.bride + " & " + CONFIG.groom + ".");
-  a.hidden = false;
-}
+$("#hosts").innerHTML = CONFIG.contacts.map(c =>
+  '<div class="host"><p class="eyebrow">' + c.label + '</p><p class="hn">' + c.name + '</p></div>').join("");
 
 /* ----- countdown ----- */
 const target = new Date(CONFIG.main.iso).getTime();
@@ -569,58 +550,13 @@ function tick() {
 }
 tick(); setInterval(tick, 1000);
 
-/* ----- scratch to reveal ----- */
-(function () {
-  const cv = $("#foil"), ctx = cv.getContext("2d", { willReadFrequently: true });
-  let w = 0, h = 0, drawing = false, last = null, moves = 0, done = false;
-  function paint() {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const r = cv.getBoundingClientRect(); w = r.width; h = r.height;
-    cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    ctx.globalCompositeOperation = "source-over";
-    const g = ctx.createLinearGradient(0, 0, w, h);
-    g.addColorStop(0, "#e8d29c"); g.addColorStop(.35, "#c9a45c"); g.addColorStop(.6, "#f0dcaa"); g.addColorStop(1, "#a88140");
-    ctx.fillStyle = g; ctx.fillRect(0, 0, w, h);
-    ctx.strokeStyle = "rgba(90,60,20,.16)"; ctx.lineWidth = 1;
-    for (let x = -h; x < w; x += 14) { ctx.beginPath(); ctx.moveTo(x, h); ctx.lineTo(x + h, 0); ctx.stroke(); }
-    ctx.fillStyle = "rgba(255,255,255,.35)";
-    for (let i = 0; i < 60; i++) { ctx.fillRect(Math.random() * w, Math.random() * h, 1.6, 1.6); }
-    ctx.fillStyle = "#5a1a12"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
-    ctx.font = "500 22px Cinzel, Georgia, serif"; ctx.fillText("SCRATCH HERE", w / 2, h / 2 - 10);
-    ctx.font = "italic 18px 'Cormorant Garamond', Georgia, serif"; ctx.fillText("your date is waiting", w / 2, h / 2 + 22);
-  }
-  function pos(e) { const r = cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
-  function line(a, b) {
-    ctx.globalCompositeOperation = "destination-out"; ctx.lineCap = "round"; ctx.lineJoin = "round"; ctx.lineWidth = 38;
-    ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
-  }
-  function cleared() {
-    const d = ctx.getImageData(0, 0, cv.width, cv.height).data; let n = 0, t = 0;
-    for (let i = 3; i < d.length; i += 64) { t++; if (d[i] < 40) n++; }
-    return n / t;
-  }
-  function reveal() { if (done) return; done = true; cv.classList.add("gone"); $("#hint").textContent = "See you there."; $("#revealBtn").hidden = true; }
-  cv.addEventListener("pointerdown", e => { if (done) return; drawing = true; cv.setPointerCapture(e.pointerId); last = pos(e); line(last, last); cv.style.cursor = "grabbing"; });
-  cv.addEventListener("pointermove", e => {
-    if (!drawing || done) return; const p = pos(e); line(last, p); last = p;
-    if (++moves % 10 === 0 && cleared() > .45) reveal();
-  });
-  const end = () => { drawing = false; cv.style.cursor = "grab"; if (!done && cleared() > .45) reveal(); };
-  cv.addEventListener("pointerup", end); cv.addEventListener("pointercancel", end);
-  $("#revealBtn").addEventListener("click", reveal);
-  let lastW = 0;
-  new ResizeObserver(() => { const nw = cv.getBoundingClientRect().width; if (!done && Math.abs(nw - lastW) > 1) { lastW = nw; paint(); } }).observe(cv);
-  paint();
-})();
-
 /* ----- music ----- */
 (function () {
-  const btn = $("#music"); let ac, master, el, playing = false, ready = false;
-  function init() {
-    if (ready) return; ready = true;
+  const btn = $("#music"); let ac, master, el, playing = false, ready = false, padReady = false;
+  const start = Number(CONFIG.musicStart) || 0;
+  function initPad() {
+    if (padReady) return; padReady = true;
     try {
-      if (CONFIG.musicSrc) { el = new Audio(CONFIG.musicSrc); el.loop = true; el.volume = .6; return; }
       const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return;
       ac = new AC(); master = ac.createGain(); master.gain.value = 0;
       const lp = ac.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 900;
@@ -633,16 +569,32 @@ tick(); setInterval(tick, 1000);
       });
     } catch (e) {}
   }
+  function padOn() {
+    initPad();
+    try { if (!ac) return; ac.resume(); master.gain.cancelScheduledValues(ac.currentTime); master.gain.setValueAtTime(master.gain.value, ac.currentTime); master.gain.linearRampToValueAtTime(.35, ac.currentTime + 3); } catch (e) {}
+  }
+  function padOff() {
+    try { if (!ac) return; master.gain.cancelScheduledValues(ac.currentTime); master.gain.setValueAtTime(master.gain.value, ac.currentTime); master.gain.linearRampToValueAtTime(0, ac.currentTime + .6); } catch (e) {}
+  }
+  function init() {
+    if (ready) return; ready = true;
+    if (!CONFIG.musicSrc) return;
+    try {
+      el = new Audio(CONFIG.musicSrc); el.preload = "auto"; el.volume = .6;
+      el.addEventListener("ended", () => { try { el.currentTime = start; el.play().catch(() => {}); } catch (e) {} });
+      el.addEventListener("error", () => { el = null; if (playing) padOn(); });
+    } catch (e) { el = null; }
+  }
   function play() {
     init();
     try {
-      if (el) el.play().catch(() => {});
-      else if (ac) { ac.resume(); master.gain.cancelScheduledValues(ac.currentTime); master.gain.setValueAtTime(master.gain.value, ac.currentTime); master.gain.linearRampToValueAtTime(.35, ac.currentTime + 3); }
+      if (el) { if (el.currentTime < start) el.currentTime = start; el.play().catch(() => {}); }
+      else padOn();
     } catch (e) {}
     playing = true; btn.classList.add("on");
   }
   function pause() {
-    try { if (el) el.pause(); else if (ac) { master.gain.cancelScheduledValues(ac.currentTime); master.gain.setValueAtTime(master.gain.value, ac.currentTime); master.gain.linearRampToValueAtTime(0, ac.currentTime + .6); } } catch (e) {}
+    try { if (el) el.pause(); else padOff(); } catch (e) {}
     playing = false; btn.classList.remove("on");
   }
   btn.addEventListener("click", () => (playing ? pause() : play()));
